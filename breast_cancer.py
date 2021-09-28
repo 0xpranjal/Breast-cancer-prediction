@@ -5,7 +5,7 @@ Created on Sat Apr 25 17:15:47 2020
 
 @author: pranjal27bhardwaj
 """
-#Importing all the required libraries for this project
+#Importing all the required libraries for this project.
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -68,7 +68,7 @@ y_predict =svm_model.predict(x_test)
 cm = confusion_matrix(y_test,y_predict)
 
 
-#model improvisation
+#model improvisation and result
 min_train =x_train.min()
 range_train =(x_train - min_train).max()
 x_train_scaled =(x_train-min_train)/range_train
